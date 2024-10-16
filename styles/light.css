@@ -1,0 +1,63 @@
+.page.theme_light {
+    --main-color: #f1b2ce;
+    --accent-color: #ff8dcb;
+    --main-font-color: #353430;
+    --banner-title-color: #ffc2e6;
+    --background-image: url('../images/cover-image-light.png');
+}
+
+.page.theme_light {
+    background-image: var(--background-image);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --main-color: #f1b2ce;
+        --accent-color: #ff8dcb;
+        --main-font-color: #353430;
+        --banner-title-color: #ffc2e6;
+        --background-image: url('../images/cover-image-light.png');
+    }
+
+    .page {
+        background-image: var(--background-image);
+    }
+
+    .section__title {
+        color: var(--main-font-color);
+    }
+
+    .section__item-title {
+        color: var(--main-font-color);
+    }
+
+    .header__theme-menu-button {
+        color: var(--main-font-color);
+    }
+
+    .header__theme-menu-button_active {
+        border: solid 1px var(--main-font-color);
+    }
+
+    .decorated-zone::before {
+        border-top: solid 1px var(--main-font-color);
+        border-right: solid 1px var(--main-font-color);
+    }
+
+    .decorated-zone::after {
+        border-bottom: solid 1px var(--main-font-color);
+        border-left: solid 1px var(--main-font-color);
+    }
+
+    .page::after {
+        display: none;
+    }
+
+    .page::before {
+        display: none;
+    }
+
+    .banner__description {
+        color: var(--main-font-color);
+    }
+}
