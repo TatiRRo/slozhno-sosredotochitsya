@@ -158,7 +158,6 @@
 @media (1024px <= width) {
     .header {
         margin-block-end: 194px;
-        min-height: auto;
     }
 
     .header__theme-menu {
@@ -576,7 +575,6 @@
 
 @media (1024px <= width) {
     .footer {
-        min-height: auto;
         padding-block-end: 22%;
         padding-block-start: 26%;
     }
