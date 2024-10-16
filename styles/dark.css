@@ -6,10 +6,6 @@
     --background-image: url('../images/cover-image-dark.png');
 }
 
-.page.theme_dark {
-    background-image: var(--background-image);
-}
-
 .page.theme_dark .banner__description {
     color: var(--main-color);
 }
@@ -62,4 +58,18 @@
 
 .page.theme_dark .header__theme-menu-button:hover::after {
     background-color: var(--accent-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main-color: #000028;
+        --accent-color: #ff0070;
+        --main-font-color: #f1b2ce;
+        --banner-title-color: #db00ff;
+        --background-image: url('../images/cover-image-dark.png');
+    }
+
+    .page {
+        background-image: var(--background-image);
+    }
 }

@@ -60,6 +60,7 @@
 
 .header {
     position: relative;
+    height: 100vh;
 }
 
 .header__theme-menu {
@@ -165,16 +166,13 @@
     .header__theme-menu {
         padding-block-start: 2%;
         padding-inline-end: 0;
+        margin-block-end: 23%;
     }
 
     .header__theme-menu-list {
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
-    }
-
-    .header__theme-menu {
-        margin-block-end: 23%;
     }
 
     .decorated-zone::after {
@@ -524,6 +522,8 @@
 /* .footer */
 
 .footer {
+    position: relative;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
