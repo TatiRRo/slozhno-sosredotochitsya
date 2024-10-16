@@ -57,6 +57,7 @@
 .header {
     position: relative;
     margin-block-end: 41px;
+    min-height: 100vh;
 }
 
 .header__theme-menu {
@@ -542,6 +543,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-block-end: 30px;
 }
 
 .footer__title {
