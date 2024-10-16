@@ -68,6 +68,7 @@
         --accent-color: #ff0070;
         --main-font-color: #f1b2ce;
         --banner-title-color: #db00ff;
+        --background-fallback: #05042c;
         --background-image: url('../images/cover-image-dark.png');
     }
 
