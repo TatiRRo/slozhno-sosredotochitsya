@@ -57,6 +57,7 @@
 
     .page {
         background-image: var(--background-image);
+        background-color: var(--background-fallback);
     }
 
     .section__title {

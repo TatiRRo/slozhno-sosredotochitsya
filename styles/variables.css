@@ -6,4 +6,5 @@
     --banner-title-color: #db00ff;
     --accent-font-color: #f1b2ce;
     --background-image: url('../images/cover-image.png');
+    --background-fallback: #ffeef6;
 }
