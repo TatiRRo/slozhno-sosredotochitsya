@@ -72,6 +72,7 @@
     }
 
     .page {
+        background-color: var(--background-fallback);
         background-image: var(--background-image);
     }
 }
