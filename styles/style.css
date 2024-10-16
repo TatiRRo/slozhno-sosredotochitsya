@@ -157,9 +157,8 @@
 
 @media (1024px <= width) {
     .header {
-        margin-block-end: 194px;
+        margin-block-end: 60px;
     }
-
     .header__theme-menu {
         padding-block-start: 2%;
         padding-inline-end: 0;
@@ -171,12 +170,6 @@
         justify-content: center;
         align-items: flex-start;
     }
-
-    .decorated-zone::after {
-        bottom: -116px;
-        left: 20px;
-    }
-}
 
 /* .main */
 
@@ -430,6 +423,7 @@
 .section_examples {
     display: flex;
     flex-direction: column;
+    margin-block-end: 35px;
 }
 
 .examples__list {
@@ -511,7 +505,7 @@
     }
 
     .section_examples {
-        margin-block-end: 48px;
+        margin-block-end: 32px;
     }
 
     .section_examples .section__item-title {
@@ -523,6 +517,10 @@
     .examples__list {
         grid-gap: 21px;
         grid-template-rows: 260px 315px 428px;
+    }
+
+    .section_examples {
+        margin-block-end: 63px;
     }
 
     .section_examples .section__item-title {
@@ -542,7 +540,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-block-end: 30px;
 }
 
 .footer__title {
@@ -552,44 +549,39 @@
 }
 
 .footer.decorated-zone::before {
-    top: 0;
+    top: 9px;
     right: 0;
 }
 
 .footer.decorated-zone::after {
-    bottom: 26px;
+    bottom: 12px;
     left: 0px;
 }
 
 @media (768px <= width < 1024px) {
     .footer.decorated-zone::before {
-        top: 6px;
+        top: 18px;
         right: 21px;
     }
 
     .footer.decorated-zone::after {
         bottom: 17px;
-        left: 20px;
+        left: 21px;
     }
 }
 
 @media (1024px <= width) {
-    .footer {
-        padding-block-end: 22%;
-        padding-block-start: 26%;
-    }
-
     .footer__title {
         font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }
 
     .footer.decorated-zone::before {
-        top: 4px;
-        right: 19px;
+        top: 20px;
+        right: 20px;
     }
 
     .footer.decorated-zone::after {
-        bottom: 0;
-        left: 21px;
+        bottom: 20px;
+        left: 20px;
     }
 }
