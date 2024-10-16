@@ -1,10 +1,11 @@
 .page {
-    /* background-color: var(--main-font-color); */
+    background-color: var(--main-font-color);
     font-family: var(--main-font);
+    background-image: var(--background-image);
     position: relative;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
     background-attachment: fixed;
 }
 
