@@ -43,15 +43,11 @@
 .page.theme_dark::after {
     display: block;
     color: var(--accent-color);
-    top: 21px;
-    right: 47px;
 }
 
 .page.theme_dark::before {
     display: block;
     color: var(--accent-color);
-    top: 26px;
-    right: 25px;
 }
 
 .page.theme_dark .header__theme-menu-button::after {
