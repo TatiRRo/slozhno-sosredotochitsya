@@ -2,15 +2,10 @@
     background-color: var(--main-font-color);
     font-family: var(--main-font);
     position: relative;
-    background-image: url('../images/cover-image-dark.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-}
-
-.page.theme_dark {
-    background-image: url('../images/cover-image-dark.png');
 }
 
 .page::after {
