@@ -1,5 +1,5 @@
 .page {
-    background-color: var(--main-font-color);
+    /* background-color: var(--main-font-color); */
     font-family: var(--main-font);
     position: relative;
     background-repeat: no-repeat;

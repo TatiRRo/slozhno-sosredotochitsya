@@ -6,6 +6,10 @@
     --background-image: url('../images/cover-image-light.png');
 }
 
+.page {
+    background-image: var(--background-image);
+}
+
 .page.theme_light .section__title {
     color: var(--main-font-color);
 }
