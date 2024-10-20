@@ -6,8 +6,6 @@
     --background-fallback: #05042c;
     --background-image: url('../images/cover-image-dark.png');
     --color-hover: rgba(255, 0, 112, 0.5);
-}
-.page.theme_dark {
     background-color: var(--background-fallback);
 }
 
