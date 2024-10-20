@@ -7,4 +7,5 @@
     --accent-font-color: #f1b2ce;
     --background-image: url('../images/cover-image.png');
     --background-fallback: #ffeef6;
+    --color-hover: rgba(0, 0, 40, 0.5);
 }

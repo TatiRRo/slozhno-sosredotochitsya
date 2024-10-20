@@ -5,7 +5,47 @@
     --banner-title-color: #db00ff;
     --background-fallback: #05042c;
     --background-image: url('../images/cover-image-dark.png');
+    --color-hover: rgba(255, 0, 112, 0.5);
+}
+.page.theme_dark {
     background-color: var(--background-fallback);
+}
+
+.page.theme_dark::after {
+    display: block;
+    color: var(--accent-color);
+}
+
+.page.theme_dark::before {
+    display: block;
+    color: var(--accent-color);
+}
+
+.page.theme_dark .decorated-zone::before {
+    border-top: solid 1px var(--accent-color);
+    border-right: solid 1px var(--accent-color);
+}
+
+.page.theme_dark .decorated-zone::after {
+    border-bottom: solid 1px var(--accent-color);
+    border-left: solid 1px var(--accent-color);
+}
+
+.page.theme_dark .header__theme-menu-button {
+    color: var(--accent-color);
+}
+
+.page.theme_dark .header__theme-menu-button_active {
+    border: solid 1px var(--accent-color);
+}
+
+.page.theme_dark .header__theme-menu-button:hover {
+    outline: solid 1px var(--color-hover);
+}
+
+.page.theme_dark .header__theme-menu-button:focus-visible {
+    outline: none;
+    box-shadow: 0px 1px 0 0 var(--accent-color);
 }
 
 .page.theme_dark .banner__description {
@@ -20,48 +60,6 @@
     color: var(--main-color);
 }
 
-.page.theme_dark .header__theme-menu-button {
-    color: var(--accent-color);
-}
-
-.page.theme_dark .header__theme-menu-button_active {
-    border: solid 1px var(--accent-color);
-}
-
-.page.theme_dark .decorated-zone::before {
-    border-top: solid 1px var(--accent-color);
-    border-right: solid 1px var(--accent-color);
-}
-
-.page.theme_dark .decorated-zone::after {
-    border-bottom: solid 1px var(--accent-color);
-    border-left: solid 1px var(--accent-color);
-}
-
-.page.theme_dark::after {
-    display: block;
-    color: var(--accent-color);
-}
-
-.page.theme_dark::before {
-    display: block;
-    color: var(--accent-color);
-}
-
-.page.theme_dark .header__theme-menu-button::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 100%;
-    height: 1px;
-    background-color: transparent;
-}
-
-.page.theme_dark .header__theme-menu-button:hover::after {
-    background-color: var(--accent-color);
-}
-
 @media (prefers-color-scheme: dark) {
     :root {
         --main-color: #000028;
@@ -70,10 +68,19 @@
         --banner-title-color: #db00ff;
         --background-fallback: #05042c;
         --background-image: url('../images/cover-image-dark.png');
+        --color-hover: rgba(0, 0, 40, 0.5);
     }
 
     .page {
         background-color: var(--background-fallback);
         background-image: var(--background-image);
+    }
+
+    .banner__description {
+        color: var(--main-color);
+    }
+
+    .section__item-title {
+        color: var(--main-color);
     }
 }
